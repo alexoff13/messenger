@@ -17,7 +17,7 @@ function onSend() {
         let reversedMessage = [...message].reverse().join("")
         setTimeout(() => {
             document.getElementsByClassName('window')[0].innerHTML +=
-                `<div class="msg"><div class="message__from">${reversedMessage}</div></div>`
+                `<div class="msg from"><div class="message__from">${reversedMessage}</div></div>`
             scrollMessagesToBottom()
         }, 2000)
 
